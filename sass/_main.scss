@@ -1,0 +1,46 @@
+/* ============================ */
+/* ============================ */
+/* MAIN STYLES */
+body{
+    @include fontstack;
+    color: $black;
+}
+
+header{
+  background-color: $white-blue;
+  .navbar{
+    background-color: transparent;
+    border-color: transparent;
+    .navbar-brand{
+      img{
+        height: 20px;
+      }
+      &:hover{
+        img{
+          fill: $black;
+        }
+      }
+    }
+  }
+}
+
+section{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.hero{
+  background-color: $white-blue;
+
+  .description{
+    margin-bottom: 60px;
+
+    h3{
+      @include fontstack;
+      font-weight: 300;
+      color: $black;
+    }
+  }
+
+  
+}
