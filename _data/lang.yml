@@ -1,9 +1,0 @@
----
-ru:
-  home:
-    slogan: Короткое описалово
-    message: This is my example home page powered by the Jekyll language plugin.
-en:
-  home:
-    slogan: Short description
-    message: Dies ist meine Beispielhomepage getrieben vom Jekyll-Sprachplugin.
