@@ -2,7 +2,12 @@
 # You don't need to edit this file, it's empty on purpose.
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: index
+layout: default
+
+languages:
+- ru
+- en
+subset: home
 ---
 
 <header>
@@ -46,7 +51,7 @@ layout: index
   <div class="container text-center">
     <div class="description row">
       <div class="col-md-8 col-md-offset-2">
-        <h1>Короткое описалово</h1>
+        <h1>{% t 'slogan' %}</h1>
         <h3 class="subheading">Платформа для продажи доступа к API с акцентом на доступе к данным, обработке данных и сервисных функций</h3>
         <button type="button" class="btn btn-primary btn-lg mt-20">CTA кнопка</button>
       </div>

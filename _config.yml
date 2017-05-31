@@ -208,7 +208,11 @@ exclude:
 #           label: "Publish"
 #           help: "Check to publish post, uncheck to hide."
 
+language_data: data.lang.%%
+language_includes_dir: _i18n
+
 gems:
+  - jekyll-language-plugin
   # - jekyll-paginate
 
 # Beautiful Jekyll / Dean Attali
