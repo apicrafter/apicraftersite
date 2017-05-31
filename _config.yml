@@ -208,11 +208,11 @@ exclude:
 #           label: "Publish"
 #           help: "Check to publish post, uncheck to hide."
 
-language_data: data.lang.%%
-language_includes_dir: _i18n
+languages: ["ru", "en"]
+exclude_from_localizations: ["js", "img", "css", "sass"]
 
 gems:
-  - jekyll-language-plugin
+  # - jekyll-language-plugin
   # - jekyll-paginate
 
 # Beautiful Jekyll / Dean Attali

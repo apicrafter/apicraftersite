@@ -1,0 +1,9 @@
+---
+global:
+  russian: RU
+  english: EN
+pages:
+  home: Home
+
+home:
+  lead: Short description

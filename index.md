@@ -29,15 +29,29 @@ subset: home
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
+<!--             <li>
+              {% if site.lang == "ru" %}
+                {% capture link1 %}{{ site.baseurl_root }}en{{ page.url}}{% endcapture %}
+                <a href="{{ link1 }}" >{% t global.english %}</a>
+              {% elsif site.lang == "en" %}
+                {% capture link2 %}{{ site.baseurl_root }}{{ page.url  }}{% endcapture %}
+                <a href="{{ link2 }}" >{% t global.russian %}</a>
+              {% endif %}
+            </li> -->
+            <!-- <li><a href="#">Link</a></li> -->
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              {% if site.lang == "ru" %}
+                {% t global.russian %} 
+              {% elsif site.lang == "en" %}
+                {% t global.english %} 
+              {% endif %}
+              <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
+                {% capture link1 %}{{ site.baseurl_root }}en{{ page.url}}{% endcapture %}
+                <li><a href="{{ link1 }}" >{% t global.english %}</a></li>
+                {% capture link2 %}{{ site.baseurl_root }}{{ page.url  }}{% endcapture %}
+                <li><a href="{{ link2 }}" >{% t global.russian %}</a></li>
               </ul>
             </li>
           </ul>
@@ -51,7 +65,7 @@ subset: home
   <div class="container text-center">
     <div class="description row">
       <div class="col-md-8 col-md-offset-2">
-        <h1>{% t 'slogan' %}</h1>
+        <h1>{% t home.lead %}</h1>
         <h3 class="subheading">Платформа для продажи доступа к API с акцентом на доступе к данным, обработке данных и сервисных функций</h3>
         <button type="button" class="btn btn-primary btn-lg mt-20">CTA кнопка</button>
       </div>
