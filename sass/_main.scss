@@ -52,7 +52,8 @@ section{
 
 .price{
   .panel-info{
-    border-color: $grey;
+    border: 0;
+    box-shadow: 0 3rem 4rem rgba(8, 50, 154, 0.15);
     .panel-heading{
       background-color: $white;
       color: $white;
@@ -67,6 +68,12 @@ section{
 
 .cta{
   background-color: $brand;
+}
+
+.hiw{
+  .fa{
+    color: $brand-light;
+  }
 }
 
 /*-------------------------------*/

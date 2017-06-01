@@ -38,7 +38,7 @@ subset: home
                 <a href="{{ link2 }}" >{% t global.russian %}</a>
               {% endif %}
             </li> -->
-            <!-- <li><a href="#">Link</a></li> -->
+            <li><a href="#">Link</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
               {% if site.lang == "ru" %}
@@ -48,9 +48,9 @@ subset: home
               {% endif %}
               <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                {% capture link1 %}{{ site.baseurl_root }}en{{ page.url}}{% endcapture %}
+                {% capture link1 %}{{ site.baseurl_root }}en{{ page.url }}{% endcapture %}
                 <li><a href="{{ link1 }}" >{% t global.english %}</a></li>
-                {% capture link2 %}{{ site.baseurl_root }}{{ page.url  }}{% endcapture %}
+                {% capture link2 %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
                 <li><a href="{{ link2 }}" >{% t global.russian %}</a></li>
               </ul>
             </li>
@@ -87,17 +87,17 @@ subset: home
       </div>
     </div>
     <div class="row mt-40">
-      <div class="col-md-4">
+      <div class="hiw-card col-md-4">
         <i class="fa fa-4x fa-desktop"></i>
         <h5>Заголовок секции</h5>
         <p>Блок секции, описывающий основное (целевое) взаимодействие пользователя с продуктом. Важно не углублятся в недры.</p>
       </div>
-      <div class="col-md-4">
+      <div class="hiw-card col-md-4">
         <i class="fa fa-4x fa-desktop"></i>
         <h5>Заголовок секции</h5>
         <p>Блок секции, описывающий основное (целевое) взаимодействие пользователя с продуктом. Важно не углублятся в недры.</p>
       </div>
-      <div class="col-md-4">
+      <div class="hiw-card col-md-4">
         <i class="fa fa-4x fa-desktop"></i>
         <h5>Заголовок секции</h5>
         <p>Блок секции, описывающий основное (целевое) взаимодействие пользователя с продуктом. Важно не углублятся в недры.</p>

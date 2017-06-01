@@ -192,6 +192,25 @@ small, .small{
     }
 }
 
+.navbar{
+    .navbar-nav{
+        li{
+            a{
+                color: $brand;
+            }
+        }
+        .open{
+            a{
+                &:hover,
+                &:focus{
+                    color: $black;
+                    background-color: $white-blue;
+                }
+            }
+        }
+    }
+}
+
 
 
 // /* GRID */

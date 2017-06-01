@@ -121,6 +121,12 @@ small, .small {
   .btn-primary:hover, .btn-primary:focus {
     background-color: #222; }
 
+.navbar .navbar-nav li a {
+  color: #08329a; }
+.navbar .navbar-nav .open a:hover, .navbar .navbar-nav .open a:focus {
+  color: #222;
+  background-color: #f3f5f9; }
+
 .mt-10 {
   margin-top: 10px; }
 
@@ -218,7 +224,8 @@ section {
   color: #222; }
 
 .price .panel-info {
-  border-color: #ddd; }
+  border: 0;
+  box-shadow: 0 3rem 4rem rgba(8, 50, 154, 0.15); }
   .price .panel-info .panel-heading {
     background-color: #fff;
     color: #fff;
@@ -226,6 +233,9 @@ section {
 
 .cta {
   background-color: #08329a; }
+
+.hiw .fa {
+  color: #98abdb; }
 
 /*-------------------------------*/
 /*      Code snippet by          */
