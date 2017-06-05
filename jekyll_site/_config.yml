@@ -155,6 +155,7 @@ exclude:
   - LICENSE
   - README.md
   - Vagrantfile
+  - Rakefile
 
 # prose.io config
 # prose:
