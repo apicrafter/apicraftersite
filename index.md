@@ -38,7 +38,7 @@ subset: home
                 <a href="{{ link2 }}" >{% t global.russian %}</a>
               {% endif %}
             </li> -->
-            <li><a href="#">Link</a></li>
+            <!-- <li><a href="#">Link</a></li> -->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
               {% if site.lang == "ru" %}
@@ -48,10 +48,14 @@ subset: home
               {% endif %}
               <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                {% capture link1 %}{{ site.baseurl_root }}en{{ page.url }}{% endcapture %}
-                <li><a href="{{ link1 }}" >{% t global.english %}</a></li>
-                {% capture link2 %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
-                <li><a href="{{ link2 }}" >{% t global.russian %}</a></li>
+                {% capture link_ru %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
+                <li>
+                  <a href="{{ link_ru }}" >{% t global.russian %}</a>
+                </li>
+                {% capture link_en %}{{ site.baseurl_root }}en{{ page.url }}{% endcapture %}
+                <li>
+                  <a href="{{ link_en }}" >{% t global.english %}</a>
+                </li>
               </ul>
             </li>
           </ul>
