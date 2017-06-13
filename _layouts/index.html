@@ -1,0 +1,163 @@
+---
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: default
+---
+
+<header>
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Меню</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+            <img src="/img/logo.svg" alt="">
+          </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EN <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                {% capture link_ru %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
+                <li>
+                  <a href="{{ link_ru }}" >RU</a>
+                </li>
+                {% capture link_en %}{{ site.baseurl_root }}en{{ page.url }}{% endcapture %}
+                <li>
+                  <a href="{{ link_en }}" >EN</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container text-center">
+    <div class="description row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>{{page.lead}}</h1>
+        <h3 class="subheading">{{page.sublead}}</h3>
+        <button type="button" class="btn btn-primary btn-lg mt-20">{{page.cta}}</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <img src="/img/hero.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hiw">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>{{page.hiw.heading}}</h1>
+        <h3 class="subheading">{{page.hiw.subheading}}</h3>
+      </div>
+    </div>
+    <div class="row mt-40">
+      {% for list in page.hiw.list%}
+      <div class="hiw-card col-md-4">
+        <i class="fa fa-4x fa-{{list.icon}}"></i>
+        <h5>{{list.heading}}</h5>
+        <p>{{list.subheading}}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="price">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>{{page.plan.heading}}</h1>
+        <h3 class="subheading">{{page.plan.subheading}}</h3>
+      </div>
+    </div>
+    <div class="row mt-40">
+      {% for list in page.plan.list%}
+      <div class="col-md-4">
+        <div class="panel panel-info">
+          <div class="panel-heading"><h3 class="text-center">{{list.heading}}</h3></div>
+          <div class="panel-body text-center">
+            <p class="lead" style="font-size:32px">{{list.price}}</p>
+          </div>
+          <ul class="list-group list-group-flush text-center">
+            {% for feature in list.features %}
+            <li class="list-group-item"><i class="icon-ok text-danger"></i>{{feature}}</li>
+            {% endfor %}
+          </ul>
+          <div class="panel-footer">
+            <a class="btn btn-lg btn-block btn-primary" href="#">Оформить заказ</a>
+          </div><!--/panel-footer-->
+        </div><!--/panel-->
+      </div><!--/col-->
+      {% endfor %}
+    </div><!--/row-->
+  </div><!--/container-->
+</section>
+
+<section class="cta dark-bg">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h1>{{page.cta_section}}</h1>
+        <button type="button" class="btn btn-default btn-lg mt-20">{{page.cta2}}</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial">           
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>{{page.feedback.heading}}</h1>
+        <h3 class="subheading">{{page.feedback.subheading}}</h3>
+      </div>
+    </div>
+    <div class="row mt-40">
+      <div class="col-md-8 col-md-offset-2">
+        <!-- <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div> -->
+        <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+          <!-- Carousel indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+            <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
+          </ol>
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            {% for feedback in page.feedback.list %}
+            <div class="item {% if feedback.active %}active{% endif %}">
+              <div class="profile-circle">
+                {% if feedback.img %}
+                <img src="{{feedback.img}}" alt="">
+                {% endif %}
+              </div>
+              <blockquote>
+                <p>{{feedback.text}}</p>
+              </blockquote> 
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

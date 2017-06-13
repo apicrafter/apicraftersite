@@ -1,0 +1,134 @@
+/* ============================ */
+/* ============================ */
+/* MAIN STYLES */
+body{
+    @include fontstack;
+    color: $black;
+}
+
+header{
+  background-color: $white-blue;
+  .navbar{
+    background-color: transparent;
+    border-color: transparent;
+    .navbar-brand{
+      img{
+        height: 20px;
+      }
+      &:hover{
+        img{
+          fill: $black;
+        }
+      }
+    }
+  }
+}
+
+section{
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &:nth-child(even){
+    background-color: $white-blue;
+  }
+}
+
+.hero{
+  padding-top: 40px;
+  .description{
+    margin-bottom: 60px;
+  }
+}
+
+.featured{
+  background-color: $white-blue;
+}
+
+.subheading{
+  @include fontstack;
+  font-weight: 300;
+  color: $black;
+}
+
+.price{
+  .panel-info{
+    border: 0;
+    box-shadow: 0 3rem 4rem rgba(8, 50, 154, 0.15);
+    .panel-heading{
+      background-color: $white;
+      color: $white;
+      border-color: $grey;
+      h3{
+        // color: $white;
+      }
+    }
+  }
+}
+
+
+.cta{
+  background-color: $brand;
+}
+
+.hiw{
+  .fa{
+    color: $brand-light;
+  }
+}
+
+/*-------------------------------*/
+/*      Code snippet by          */
+/*      @maridlcrmn              */
+/*-------------------------------*/
+
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.quote {
+  color: rgba(0,0,0,.1);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*-------------------------------*/
+/*    Carousel Fade Transition   */
+/*-------------------------------*/
+
+#fade-quote-carousel.carousel {
+  padding-bottom: 60px;
+}
+#fade-quote-carousel.carousel .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-inner .active {
+  opacity: 1;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-indicators {
+  bottom: 10px;
+}
+#fade-quote-carousel.carousel .carousel-indicators > li {
+  background-color: $brand;
+  border: none;
+}
+#fade-quote-carousel blockquote {
+  text-align: center;
+  border: none;
+}
+#fade-quote-carousel .profile-circle {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 100px;
+  // background-color: $brand;
+  overflow: hidden;
+}
+
+
