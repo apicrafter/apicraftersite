@@ -69,15 +69,15 @@
   
 
    
-  <meta property="og:description" content="Toggle navigation {% if site.lang == &quot;ru&quot; %} {% t global.russian %} {% elsif site.lang == &quot;en&quot; %} {% t global.english %} {% endif %} {% capture link_ru %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %} {% t global.russian %} {% capture link_en %}{{ site.baseurl_root }}en{{ page.url }}{% endcapture %} {%...">
+  <meta property="og:description" content="Toggle navigation EN {% capture link_ru %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %} RU {% capture link_en %}{{ site.baseurl_root }}en{{ page.url }}{% endcapture %} EN Короткое описалово Платформа для продажи доступа к API с акцентом на доступе к данным, обработке данных и сервисных функций CTA кнопка Как это работает Блок...">
   
 
 
   <meta property="og:type" content="website" />
 
   
-  <meta property="og:url" content="http://apicrafter.ru//" />
-  <link rel="canonical" href="http://apicrafter.ru//" />
+  <meta property="og:url" content="http://localhost:4000/" />
+  <link rel="canonical" href="http://localhost:4000/" />
   
 
   
@@ -93,7 +93,7 @@
   
 
   
-  <meta name="twitter:description" content="Toggle navigation {% if site.lang == &quot;ru&quot; %} {% t global.russian %} {% elsif site.lang == &quot;en&quot; %} {% t global.english %} {% endif %} {% capture link_ru %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %} {% t global.russian %} {% capture link_en %}{{ site.baseurl_root }}en{{ page.url }}{% endcapture %} {%...">
+  <meta name="twitter:description" content="Toggle navigation EN {% capture link_ru %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %} RU {% capture link_en %}{{ site.baseurl_root }}en{{ page.url }}{% endcapture %} EN Короткое описалово Платформа для продажи доступа к API с акцентом на доступе к данным, обработке данных и сервисных функций CTA кнопка Как это работает Блок...">
   
 
   
@@ -121,19 +121,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-<!--             <li>
-              
-                
-                <a href="en/" >EN</a>
-              
-            </li> -->
-            <!-- <li><a href="#">Link</a></li> -->
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-              
-                RU 
-              
-              <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EN <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 
                 <li>

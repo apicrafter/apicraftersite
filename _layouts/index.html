@@ -1,108 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+---
+layout: base
+---
 
-  <title>API Crafter</title>
-
-  <meta name="author" content="АНО "Информационная культура"" />
-
-  
-
-  <link rel="alternate" type="application/rss+xml" title="API Crafter - Платформа для продажи доступа к API с акцентом на доступе к данным, обработке данных и сервисных функций." href="/feed.xml" />
-
-  <link rel="shortcut icon" href="/favicon.ico">
-
-  
-    
-      
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-
-    
-      
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-    
-  
-
-  
-    
-      <link rel="stylesheet" href="/css/style.css" />
-    
-  
-
-  
-    
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=cyrillic" />
-    
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
-    
-  
-
-  
-    
-      
-  <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
-
-
-    
-      
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
-    
-  
-
-  
-
-  
-
-  
-
-    <!-- Facebook OpenGraph tags -->
-  
-
-  
-  <meta property="og:title" content="API Crafter" />
-  
-
-   
-  <meta property="og:description" content="Toggle navigation {% if site.lang == &quot;ru&quot; %} {% t global.russian %} {% elsif site.lang == &quot;en&quot; %} {% t global.english %} {% endif %} {% capture link_ru %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %} {% t global.russian %} {% capture link_en %}{{ site.baseurl_root }}en{{ page.url }}{% endcapture %} {%...">
-  
-
-
-  <meta property="og:type" content="website" />
-
-  
-  <meta property="og:url" content="http://apicrafter.ru//" />
-  <link rel="canonical" href="http://apicrafter.ru//" />
-  
-
-  
-  
-
-  <!-- Twitter summary cards -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@" />
-  <meta name="twitter:creator" content="@" />
-
-  
-  <meta name="twitter:title" content="API Crafter" />
-  
-
-  
-  <meta name="twitter:description" content="Toggle navigation {% if site.lang == &quot;ru&quot; %} {% t global.russian %} {% elsif site.lang == &quot;en&quot; %} {% t global.english %} {% endif %} {% capture link_ru %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %} {% t global.russian %} {% capture link_en %}{{ site.baseurl_root }}en{{ page.url }}{% endcapture %} {%...">
-  
-
-  
-
-</head>
-
-  <body>
-
-    <header>
+<header>
   <div class="container">
     <nav class="navbar navbar-default">
       <div class="container-fluid">
@@ -114,35 +14,23 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">
-            <img src="/img/logo.svg" alt="" />
+          <a class="navbar-brand" href="#">
+            <img src="/img/logo.svg" alt="">
           </a>
         </div>
+
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-<!--             <li>
-              
-                
-                <a href="en/" >EN</a>
-              
-            </li> -->
-            <!-- <li><a href="#">Link</a></li> -->
+            <li><a href="#">Link</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-              
-                RU 
-              
-              <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                
-                <li>
-                  <a href="/">RU</a>
-                </li>
-                
-                <li>
-                  <a href="en/">EN</a>
-                </li>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
               </ul>
             </li>
           </ul>
@@ -163,7 +51,7 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <img src="/img/hero.png" alt="" />
+        <img src="/img/hero.png" alt="">
       </div>
     </div>
   </div>
@@ -174,21 +62,21 @@
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
         <h1>Как это работает</h1>
-        <h3 class="subheading">Блок из нескольких секций, описывающих основное (целевое) взаимодействие пользователя с продуктом. <br /> Важно не углублятся в недры.</h3>
+        <h3 class="subheading">Блок из нескольких секций, описывающих основное (целевое) взаимодействие пользователя с продуктом. <br> Важно не углублятся в недры.</h3>
       </div>
     </div>
     <div class="row mt-40">
-      <div class="hiw-card col-md-4">
+      <div class="col-md-4">
         <i class="fa fa-4x fa-desktop"></i>
         <h5>Заголовок секции</h5>
         <p>Блок секции, описывающий основное (целевое) взаимодействие пользователя с продуктом. Важно не углублятся в недры.</p>
       </div>
-      <div class="hiw-card col-md-4">
+      <div class="col-md-4">
         <i class="fa fa-4x fa-desktop"></i>
         <h5>Заголовок секции</h5>
         <p>Блок секции, описывающий основное (целевое) взаимодействие пользователя с продуктом. Важно не углублятся в недры.</p>
       </div>
-      <div class="hiw-card col-md-4">
+      <div class="col-md-4">
         <i class="fa fa-4x fa-desktop"></i>
         <h5>Заголовок секции</h5>
         <p>Блок секции, описывающий основное (целевое) взаимодействие пользователя с продуктом. Важно не углублятся в недры.</p>
@@ -314,6 +202,4 @@
   </div>
 </section>
 
-  
-  </body>
-</html>
+

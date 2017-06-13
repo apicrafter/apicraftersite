@@ -1,108 +1,16 @@
-<!DOCTYPE html>
-<html>
-  <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+---
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: default
 
-  <title>API Crafter</title>
+languages:
+- ru
+- en
+subset: home
+---
 
-  <meta name="author" content="АНО "Информационная культура"" />
-
-  
-
-  <link rel="alternate" type="application/rss+xml" title="API Crafter - Платформа для продажи доступа к API с акцентом на доступе к данным, обработке данных и сервисных функций." href="/feed.xml" />
-
-  <link rel="shortcut icon" href="/en/favicon.ico">
-
-  
-    
-      
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-
-    
-      
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-    
-  
-
-  
-    
-      <link rel="stylesheet" href="/css/style.css" />
-    
-  
-
-  
-    
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=cyrillic" />
-    
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
-    
-  
-
-  
-    
-      
-  <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
-
-
-    
-      
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
-    
-  
-
-  
-
-  
-
-  
-
-    <!-- Facebook OpenGraph tags -->
-  
-
-  
-  <meta property="og:title" content="API Crafter" />
-  
-
-   
-  <meta property="og:description" content="Toggle navigation {% if site.lang == &quot;ru&quot; %} {% t global.russian %} {% elsif site.lang == &quot;en&quot; %} {% t global.english %} {% endif %} {% capture link_ru %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %} {% t global.russian %} {% capture link_en %}{{ site.baseurl_root }}en{{ page.url }}{% endcapture %} {%...">
-  
-
-
-  <meta property="og:type" content="website" />
-
-  
-  <meta property="og:url" content="http://apicrafter.ru//" />
-  <link rel="canonical" href="http://apicrafter.ru//" />
-  
-
-  
-  
-
-  <!-- Twitter summary cards -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@" />
-  <meta name="twitter:creator" content="@" />
-
-  
-  <meta name="twitter:title" content="API Crafter" />
-  
-
-  
-  <meta name="twitter:description" content="Toggle navigation {% if site.lang == &quot;ru&quot; %} {% t global.russian %} {% elsif site.lang == &quot;en&quot; %} {% t global.english %} {% endif %} {% capture link_ru %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %} {% t global.russian %} {% capture link_en %}{{ site.baseurl_root }}en{{ page.url }}{% endcapture %} {%...">
-  
-
-  
-
-</head>
-
-  <body>
-
-    <header>
+<header>
   <div class="container">
     <nav class="navbar navbar-default">
       <div class="container-fluid">
@@ -115,33 +23,22 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="/">
-            <img src="/img/logo.svg" alt="" />
+            <img src="/img/logo.svg" alt="">
           </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-<!--             <li>
-              
-                
-                <a href="/" >RU</a>
-              
-            </li> -->
-            <!-- <li><a href="#">Link</a></li> -->
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-              
-                EN 
-              
-              <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EN <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                
+                {% capture link_ru %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
                 <li>
-                  <a href="/">RU</a>
+                  <a href="{{ link_ru }}" >RU</a>
                 </li>
-                
+                {% capture link_en %}{{ site.baseurl_root }}en{{ page.url }}{% endcapture %}
                 <li>
-                  <a href="en/">EN</a>
+                  <a href="{{ link_en }}" >EN</a>
                 </li>
               </ul>
             </li>
@@ -156,14 +53,14 @@
   <div class="container text-center">
     <div class="description row">
       <div class="col-md-8 col-md-offset-2">
-        <h1>Short description</h1>
+        <h1>Короткое описалово</h1>
         <h3 class="subheading">Платформа для продажи доступа к API с акцентом на доступе к данным, обработке данных и сервисных функций</h3>
         <button type="button" class="btn btn-primary btn-lg mt-20">CTA кнопка</button>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
-        <img src="/img/hero.png" alt="" />
+        <img src="/img/hero.png" alt="">
       </div>
     </div>
   </div>
@@ -174,7 +71,7 @@
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
         <h1>Как это работает</h1>
-        <h3 class="subheading">Блок из нескольких секций, описывающих основное (целевое) взаимодействие пользователя с продуктом. <br /> Важно не углублятся в недры.</h3>
+        <h3 class="subheading">Блок из нескольких секций, описывающих основное (целевое) взаимодействие пользователя с продуктом. <br> Важно не углублятся в недры.</h3>
       </div>
     </div>
     <div class="row mt-40">
@@ -313,7 +210,3 @@
     </div>
   </div>
 </section>
-
-  
-  </body>
-</html>
