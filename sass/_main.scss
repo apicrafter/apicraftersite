@@ -82,14 +82,14 @@ section{
 /*-------------------------------*/
 
 section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .quote {
-    color: rgba(0,0,0,.1);
-    text-align: center;
-    margin-bottom: 30px;
+  color: rgba(0,0,0,.1);
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 /*-------------------------------*/
@@ -119,15 +119,16 @@ section {
   border: none;
 }
 #fade-quote-carousel blockquote {
-    text-align: center;
-    border: none;
+  text-align: center;
+  border: none;
 }
 #fade-quote-carousel .profile-circle {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    border-radius: 100px;
-    background-color: $brand;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 100px;
+  // background-color: $brand;
+  overflow: hidden;
 }
 
 

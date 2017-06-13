@@ -284,6 +284,6 @@ section {
   height: 100px;
   margin: 0 auto;
   border-radius: 100px;
-  background-color: #08329a; }
+  overflow: hidden; }
 
 /*# sourceMappingURL=style.css.map */
