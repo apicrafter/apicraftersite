@@ -5,15 +5,15 @@
 layout: index
 
 ref: index
-lang: ru
+lang: en
 
 title: API Crafter
 
-lead: Короткое описалово
+lead: Short description
 sublead: Платформа для продажи доступа к API с акцентом на доступе к данным, обработке данных и сервисных функций
 
-cta: CTA кнопка
-cta2: Ещё одна CTA кнопка
+cta: CTA button
+cta2: I NEED MORE CTA BUTTONS
 
 hiw:
   heading: Как это работает
