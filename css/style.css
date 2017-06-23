@@ -47,9 +47,11 @@ p {
   margin-bottom: 20px; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #08329a;
+  border-bottom: 1px solid #08329a; }
   a:hover, a:focus {
-    text-decoration: underline; }
+    text-decoration: none; }
 
 b, strong {
   font-weight: bolder; }
@@ -127,6 +129,11 @@ small, .small {
   color: #222;
   background-color: #f3f5f9; }
 
+.row-eq-height {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap; }
+
 .mt-10 {
   margin-top: 10px; }
 
@@ -203,6 +210,8 @@ header {
       height: 20px; }
     header .navbar .navbar-brand:hover img {
       fill: #222; }
+  header a {
+    border-bottom: none; }
 
 section {
   padding-top: 40px;
@@ -215,13 +224,18 @@ section {
   .hero .description {
     margin-bottom: 60px; }
 
+.title {
+  padding-top: 0;
+  padding-bottom: 20px; }
+
 .featured {
   background-color: #f3f5f9; }
 
 .subheading {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  color: #222; }
+  color: #222;
+  margin-bottom: 40px; }
 
 .price .panel-info {
   border: 0;
@@ -234,8 +248,31 @@ section {
 .cta {
   background-color: #08329a; }
 
-.hiw .fa {
-  color: #98abdb; }
+.hiw .hiw-card {
+  margin-bottom: 40px; }
+  .hiw .hiw-card .fa {
+    margin-bottom: 10px;
+    color: #98abdb; }
+.hiw.feature .hiw-card {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 40px 20px 20px;
+  border: 1px solid #f3f5f9;
+  background-color: #fff;
+  box-shadow: 0 3rem 4rem rgba(8, 50, 154, 0.15);
+  overflow: hidden; }
+  .hiw.feature .hiw-card .num {
+    position: absolute;
+    top: -100px;
+    left: -10px;
+    font-size: 250px;
+    font-weight: bold;
+    color: #f3f5f9; }
+  .hiw.feature .hiw-card .fa, .hiw.feature .hiw-card h5, .hiw.feature .hiw-card p {
+    position: relative; }
+
+.contact-form h1, .contact-form h2, .contact-form h3, .contact-form h4, .contact-form h5, .contact-form h6 {
+  margin-bottom: 40px; }
 
 /*-------------------------------*/
 /*      Code snippet by          */

@@ -21,13 +21,13 @@ hiw:
   list:
     - heading: Источники данных
       subheading: Базы данных API Crafter, базы данных партнеров, базы данных клиента (дополнительная разработка)
-      icon: desktop
+      icon: database
     - heading: Формат передаваемых данных
       subheading: Все данные передаются в систему клиента в формате JSON
-      icon: plane
+      icon: code
     - heading: Системы клиента
       subheading: Интернет-портал, мобильное приложение, аналитические информационные системы, информационные системы безопасности и т.д.
-      icon: rocket
+      icon: desktop
 
 hiw2:
   heading: Возможности
@@ -35,19 +35,19 @@ hiw2:
   list:
     - heading: Доступ через API к нашим базам данных
       subheading: Наша компания обладает набором дата-сетов, приобретая доступ к которым через API вы получите необходимые вам и вашим программным продуктам ресурсы в автоматическом режиме, оплачивая только те строки баз данных, которые вам нужны. Более подробное описание баз данных ниже
-      icon: desktop
+      icon: database
     - heading: Разовые выгрузки информации
       subheading: Для значительной части дата-сетов, имеющихся в распоряжении API Crafter, предоставляется услуга выгрузки целиком или какой-то части базы данных в необходимом клиенту формате
-      icon: plane
+      icon: cloud-download
     - heading: Создание API на базе данных клиента
       subheading: Мы предоставляем услуги в области создания API для массивов данных на стороне клиента. Мы проводим работы по приведению баз данных в требуемое состояние, по созданию API для автоматизированной работы систем клиента с его дата сетами
-      icon: rocket
+      icon: cubes
     - heading: Специализированные решения
       subheading: Под задачи клиентов мы проводим кастомную обработку баз данных (сведение нового дата-сета из имеющихся) либо дорабатываем параметры запросов под технические требования заказчика.
-      icon: rocket
+      icon: cube
     - heading: Консультационные услуги
       subheading: Мы обладаем компетенциями и экспертизой в области использования API, создания и работы с базами данных и оказываем консультационные услуги по данным вопросам
-      icon: rocket
+      icon: graduation-cap
 
 hiw3:
   heading: Источники данных
@@ -55,22 +55,22 @@ hiw3:
   list:
     - heading: Госзакупки и госконтракты
       subheading: Контракты/договоры и извещения (суммы, даты, закупки и др.), поставщики/заказчики (реквизиты и контактная информация), планы-графики (дата, заказчик, общая сумма, совокупный объем и т.д.)
-      icon: desktop
+      icon: file-text-o
     - heading: Организации
       subheading: Базы данных по организациям на основании реестров Минфина, ФНС, Росстата и т.п.
-      icon: plane
+      icon: building-o
     - heading: Государственные финансы
       subheading: Федеральный бюджет, данные отчетов федерального казначейства, отчетности по налоговым поступлениям и т.д.
-      icon: rocket
+      icon: money
     - heading: НКО
       subheading: Базы данных по некоммерческим организациям, а именно реестры, гранты, отчеты и т.д.
-      icon: rocket
+      icon: certificate
     - heading: Регионы и муниципалитеты
       subheading: Показатели деятельности регионов и муниципальных образований по всей территории страны
-      icon: rocket
+      icon: globe
     - heading: Банки
       subheading: Данные по показателям деятельности банков и банковской системе (базы данных ЦБ РФ, банковских ассоциаций, Минфина, Организаций фондового рынка и т.д.)
-      icon: rocket
+      icon: university
 
 plan:
   heading: Тарифы
@@ -108,5 +108,8 @@ feedback:
       img: https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg
     - text: Длинный отзыв, lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.
       img: https://s3.amazonaws.com/uifaces/faces/twitter/ritu/128.jpg
+
+contact-form:
+  heading: Свяжитесь с нами!
 
 ---
