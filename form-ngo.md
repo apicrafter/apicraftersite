@@ -4,7 +4,7 @@ layout: page
 ref: form
 lang: ru
 
-title: Заявка
+title: Заявка на базу данных по НКО
 ---
 
 <div class="row">
@@ -29,21 +29,8 @@ title: Заявка
         <input type="text" name="full_name" class="form-control" id="formOrganization" placeholder="Введите название Вашей Организации">
       </div>
       <div class="form-group">
-        <label for="formMessage">Наименование базы данных*</label>
-        <textarea name="message" class="form-control" id="formMessage" rows="3" placeholder="Введите наименование базы данных" required=""></textarea>
-      </div>
-      <div class="form-group">
-        <label for="formPlan">Тариф (при наличии определенности)</label>
-        <select name="plan" class="form-control">
-          <option disabled selected>Выберите тариф</option>
-          <option>Тариф 1</option>
-          <option>Тариф 2</option>
-          <option>Тариф 3</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="formInfo">Дополнительная информация</label>
-        <textarea name="info" class="form-control" id="formInfo" rows="3" placeholder="Введите дополнительную информацию"></textarea>
+        <label for="formMessage">Располагаемые базы данных*</label>
+        <textarea name="message" class="form-control" id="formMessage" rows="3" placeholder="Введите краткое описание с основными параметрами" required=""></textarea>
       </div>
       <div class="form-group">
         <p class="warn">Отправляя заявку, я соглашаюсь на обработку персональных данных.</p>
@@ -52,7 +39,7 @@ title: Заявка
         <input class="btn btn-lg btn-primary" type="submit" value="Отправить заявку">
       </div>
 
-      <input type="hidden" name="_subject" value="Заявка с сайта API Crafter">
+      <input type="hidden" name="_subject" value="Заявка с сайта API Crafter (НКО)">
       <input type="hidden" name="_next" value="">
       <input type="hidden" name="_language" value="ru" />
     </form>

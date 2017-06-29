@@ -62,6 +62,9 @@ i {
 small, .small {
   font-size: 85%; }
 
+table thead tr th {
+  background-color: #f3f5f9; }
+
 .left {
   float: left; }
 
@@ -253,6 +256,9 @@ section {
   .hiw .hiw-card .fa {
     margin-bottom: 10px;
     color: #98abdb; }
+  .hiw .hiw-card .description {
+    font-size: 13px;
+    color: #98abdb; }
 .hiw.feature .hiw-card {
   position: relative;
   margin-bottom: 20px;
@@ -273,6 +279,10 @@ section {
 
 .contact-form h1, .contact-form h2, .contact-form h3, .contact-form h4, .contact-form h5, .contact-form h6 {
   margin-bottom: 40px; }
+
+.warn {
+  font-size: 13px;
+  color: #98abdb; }
 
 /*-------------------------------*/
 /*      Code snippet by          */

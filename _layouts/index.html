@@ -13,7 +13,7 @@ layout: default
       <div class="col-md-8 col-md-offset-2">
         <h1>{{page.lead}}</h1>
         <h3 class="subheading">{{page.sublead}}</h3>
-        <button type="button" class="btn btn-primary btn-lg mt-20">{{page.cta}}</button>
+        <!-- <button type="button" class="btn btn-primary btn-lg mt-20">{{page.cta}}</button> -->
       </div>
     </div>
     <div class="row">
@@ -79,6 +79,8 @@ layout: default
         <i class="fa fa-4x fa-fw fa-{{list.icon}}"></i>
         <h5><a href="{{site.baseurl}}/{{list.src}}">{{list.heading}}</a></h5>
         <p>{{list.subheading}}</p>
+        <p class="description">{{list.text}}</p>
+        {% if list.btn %} <a href="{{site.baseurl}}/{{list.btn}}" class="btn btn-primary">Предложить сотрудничество</a> {% endif %}
       </div>
       {% endfor %}
     </div>
@@ -95,7 +97,7 @@ layout: default
     </div>
     <div class="row mt-40 row-eq-height">
       {% for list in page.plan.list%}
-      <div class="col-md-4">
+      <div class="col-md-6">
         <div class="panel panel-info">
           <div class="panel-heading"><h3 class="text-center">{{list.heading}}</h3></div>
           <div class="panel-body text-center">

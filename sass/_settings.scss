@@ -71,7 +71,7 @@ a{
     &:hover,
     &:focus{
         text-decoration: none;
-        
+
     }
 }
 
@@ -87,6 +87,15 @@ small, .small{
     font-size: 85%;
 }
 
+table{
+    thead{
+        tr{
+            th{
+                background-color: $white-blue;
+            }
+        }
+    }
+}
 
 
 
