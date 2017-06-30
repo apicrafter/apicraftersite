@@ -284,6 +284,18 @@ section {
   font-size: 13px;
   color: #98abdb; }
 
+.parsley-error {
+  border-color: red; }
+  .parsley-error:focus {
+    border-color: red !important; }
+
+.parsley-errors-list {
+  padding-left: 0;
+  color: red; }
+  .parsley-errors-list li {
+    font-size: 12px;
+    list-style-type: none; }
+
 /*-------------------------------*/
 /*      Code snippet by          */
 /*      @maridlcrmn              */

@@ -9,7 +9,7 @@ title: Заявка
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <form action="https://formspree.io/" method="POST" data-parsley-validate="">
+    <form action="https://formspree.io/apicrafter@infoculture.ru" method="POST" data-parsley-validate="">
       <div class="form-group row">
         <div class="col-12 col-sm-6 mb-3 mb-sm-0">
         <label for="formName">Ваше имя</label>
@@ -53,7 +53,7 @@ title: Заявка
       </div>
 
       <input type="hidden" name="_subject" value="Заявка с сайта API Crafter">
-      <input type="hidden" name="_next" value="">
+      <input type="hidden" name="_next" value="http://apicrafter.ru/thanks">
       <input type="hidden" name="_language" value="ru" />
     </form>
   </div>
