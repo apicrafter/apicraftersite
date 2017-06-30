@@ -13,7 +13,8 @@ layout: default
       <div class="col-md-8 col-md-offset-2">
         <h1>{{page.lead}}</h1>
         <h3 class="subheading">{{page.sublead}}</h3>
-        <!-- <button type="button" class="btn btn-primary btn-lg mt-20">{{page.cta}}</button> -->
+        <button type="button" class="btn btn-primary btn-lg mt-20" data-toggle="modal" data-target="#requestForm">{{page.cta2}}</button>
+        <!-- <a href="#" class="btn btn-default btn-lg mt-20" data-toggle="modal" data-target="#requestForm">{{page.cta2}}</a> -->
       </div>
     </div>
     <div class="row">
@@ -77,12 +78,27 @@ layout: default
       {% for list in page.hiw3.list%}
       <div class="hiw-card col-md-4">
         <i class="fa fa-4x fa-fw fa-{{list.icon}}"></i>
-        <h5><a href="{{site.baseurl}}/{{list.src}}">{{list.heading}}</a></h5>
-        <p>{{list.subheading}}</p>
-        <p class="description">{{list.text}}</p>
-        {% if list.btn %} <a href="{{site.baseurl}}/{{list.btn}}" class="btn btn-primary">Предложить сотрудничество</a> {% endif %}
+        <h5>
+          {% if list.src %}
+          <a href="#" class="internal" data-toggle="modal" data-target="#modal{{list.src | capitalize}}">{{list.heading}}</a>
+          {% else %}
+          <span class="disabled">{{list.heading}}</span>
+          {% endif %}
+        </h5>
+        <p class="mb-10">{{list.subheading}}</p>
+        {% unless list.src  %}
+        <p class="disabled">В разработке</p>
+        {% endunless  %}
       </div>
       {% endfor %}
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <p class="description">{{page.hiw3.text}}</p>
+        {% if page.hiw3.cta %}
+        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#partnersForm">{{page.hiw3.cta}}</a>
+        {% endif %}
+      </div>
     </div>
   </div>
 </section>
@@ -109,7 +125,7 @@ layout: default
             {% endfor %}
           </ul>
           <div class="panel-footer">
-            <a class="btn btn-lg btn-block btn-primary" href="{{site.baseurl}}/pricing">Подробнее</a>
+            <a class="btn btn-lg btn-block btn-primary" href="#" data-toggle="modal" data-target="#modalPricing">Подробнее</a>
           </div><!--/panel-footer-->
         </div><!--/panel-->
       </div><!--/col-->
@@ -123,13 +139,32 @@ layout: default
     <div class="row text-center">
       <div class="col-md-12">
         <h1>{{page.cta_section}}</h1>
-        <button onclick="window.location.href='{{site.baseurl}}/form'" type="button" class="btn btn-default btn-lg mt-20">{{page.cta2}}</button>
+        <!-- <button onclick="window.location.href='{{site.baseurl}}/form'" type="button" class="btn btn-default btn-lg mt-20">{{page.cta2}}</button> -->
+        <a href="#" class="btn btn-default btn-lg mt-20" data-toggle="modal" data-target="#requestForm">{{page.cta2}}</a>
       </div>
     </div>
   </div>
 </section>
 
-{% include contact.html%}
+{% include contact.html %}
+
+<footer class="dark-bg">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12">
+        ООО «ОДСС» при поддержке <a href="https://www.infoculture.ru/">АНО «Инфокультура»</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+{% include form-partners.html %}
+{% include form-request.html %}
+{% include form-contact.html %}
+{% include modal-gov.html %}
+{% include modal-pricing.html %}
+
 
 <!-- <section class="testimonial">
   <div class="container">

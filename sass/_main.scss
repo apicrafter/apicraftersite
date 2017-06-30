@@ -36,6 +36,12 @@ section{
   }
 }
 
+footer{
+  background: $black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .hero{
   padding-top: 40px;
   .description{
@@ -100,11 +106,6 @@ section{
       color: $brand-light;
       // @include border-radius(50%);
     }
-    .description{
-      font-size: 13px;
-      color: $brand-light;
-
-    }
   }
   &.feature{
     .hiw-card{
@@ -130,12 +131,23 @@ section{
       }
     }
   }
+  .description{
+    font-size: 16px;
+    color: $brand-light;
+  }
+  .disabled{
+    color: $brand-light;
+  }
 }
 
 .contact-form{
   h1{
     margin-bottom: 40px;
   }
+}
+
+.modal-title{
+  display: inline-block;
 }
 
 .warn{

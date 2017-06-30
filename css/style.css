@@ -52,6 +52,8 @@ a {
   border-bottom: 1px solid #08329a; }
   a:hover, a:focus {
     text-decoration: none; }
+  a.internal {
+    border-bottom: 1px dotted #08329a; }
 
 b, strong {
   font-weight: bolder; }
@@ -92,6 +94,11 @@ table {
     text-decoration: underline; }
     .dark-bg a:hover {
       color: #fff; }
+  .dark-bg .btn {
+    color: #08329a;
+    text-decoration: none; }
+    .dark-bg .btn:hover {
+      color: #08329a; }
 
 .text ol, .text ul, .text dir, .text menu, .text dd {
   margin-left: 40px;
@@ -124,6 +131,9 @@ table {
 .btn {
   border-radius: 0;
   border: none; }
+
+.btn-default {
+  color: #08329a; }
 
 .btn-primary {
   background-color: #08329a; }
@@ -226,6 +236,11 @@ section {
   section:nth-child(even) {
     background-color: #f3f5f9; }
 
+footer {
+  background: #222;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
 .hero {
   padding-top: 40px; }
   .hero .description {
@@ -260,9 +275,6 @@ section {
   .hiw .hiw-card .fa {
     margin-bottom: 10px;
     color: #98abdb; }
-  .hiw .hiw-card .description {
-    font-size: 13px;
-    color: #98abdb; }
 .hiw.feature .hiw-card {
   position: relative;
   margin-bottom: 20px;
@@ -280,9 +292,17 @@ section {
     color: #f3f5f9; }
   .hiw.feature .hiw-card .fa, .hiw.feature .hiw-card h5, .hiw.feature .hiw-card p {
     position: relative; }
+.hiw .description {
+  font-size: 16px;
+  color: #98abdb; }
+.hiw .disabled {
+  color: #98abdb; }
 
 .contact-form h1, .contact-form h2, .contact-form h3, .contact-form h4, .contact-form h5, .contact-form h6 {
   margin-bottom: 40px; }
+
+.modal-title {
+  display: inline-block; }
 
 .warn {
   font-size: 13px;

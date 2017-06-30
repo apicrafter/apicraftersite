@@ -73,6 +73,10 @@ a{
         text-decoration: none;
 
     }
+
+    &.internal{
+        border-bottom: 1px dotted $brand;
+    }
 }
 
 b,strong{
@@ -144,6 +148,14 @@ table{
             color: $white;
         }
     }
+
+    .btn{
+        color: $brand;
+        text-decoration: none;
+        &:hover{
+            color: $brand;
+        }
+    }
 }
 
 .text{
@@ -205,6 +217,10 @@ table{
 .btn{
     border-radius: 0;
     border: none;
+}
+
+.btn-default{
+    color: $brand;
 }
 
 .btn-primary{
