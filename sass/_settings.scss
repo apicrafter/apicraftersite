@@ -88,13 +88,25 @@ small, .small{
 }
 
 table{
+    border: 1px solid $grey;
     thead{
         tr{
             th{
-                background-color: $white-blue;
+                background-color: $brand;
+                color: white;
+                border-bottom: none !important;
             }
         }
     }
+    // tbody,
+    // thead{
+    //     tr{
+    //         th,
+    //         td{
+    //             padding: 20px;
+    //         }
+    //     }
+    // }
 }
 
 

@@ -62,8 +62,12 @@ i {
 small, .small {
   font-size: 85%; }
 
-table thead tr th {
-  background-color: #f3f5f9; }
+table {
+  border: 1px solid #ddd; }
+  table thead tr th {
+    background-color: #08329a;
+    color: white;
+    border-bottom: none !important; }
 
 .left {
   float: left; }
