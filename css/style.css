@@ -268,7 +268,7 @@ footer {
     border-color: #ddd; }
 
 .cta {
-  background-color: #08329a; }
+  background-color: #08329a !important; }
 
 .hiw .hiw-card {
   margin-bottom: 40px; }

@@ -7,13 +7,15 @@ layout: default
 
 {% include header.html%}
 
+<!-- Данные через API -->
 <section class="hero">
   <div class="container text-center">
     <div class="description row">
       <div class="col-md-8 col-md-offset-2">
         <h1>{{page.lead}}</h1>
         <h3 class="subheading">{{page.sublead}}</h3>
-        <button type="button" class="btn btn-primary btn-lg mt-20" data-toggle="modal" data-target="#requestForm">{{page.cta2}}</button>
+        <a href="#hiw" class="btn btn-primary btn-lg mt-20">{{page.cta3}}</a>
+        <a href="#razmesheniye" class="btn btn-primary btn-lg mt-20">{{page.cta4}}</a>
         <!-- <a href="#" class="btn btn-default btn-lg mt-20" data-toggle="modal" data-target="#requestForm">{{page.cta2}}</a> -->
       </div>
     </div>
@@ -25,27 +27,7 @@ layout: default
   </div>
 </section>
 
-<section class="hiw feature">
-  <div class="container text-center">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <h1>{{page.hiw.heading}}</h1>
-        <h3 class="subheading">{{page.hiw.subheading}}</h3>
-      </div>
-    </div>
-    <div class="row mt-40 row-eq-height">
-      {% for list in page.hiw.list%}
-      <div class="hiw-card col-md-4">
-        <i class="num">{{forloop.index}}</i>
-        <i class="fa fa-4x fa-fw fa-{{list.icon}}"></i>
-        <h5>{{list.heading}}</h5>
-        <p>{{list.subheading}}</p>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
+<!-- Возможности -->
 <section class="hiw">
   <div class="container text-center">
     <div class="row">
@@ -66,17 +48,19 @@ layout: default
   </div>
 </section>
 
-<section class="hiw">
+<!-- Как это работает -->
+<section id="hiw" class="hiw feature">
   <div class="container text-center">
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
-        <h1>{{page.hiw4.heading}}</h1>
-        <h3 class="subheading">{{page.hiw4.subheading}}</h3>
+        <h1>{{page.hiw.heading}}</h1>
+        <h3 class="subheading">{{page.hiw.subheading}}</h3>
       </div>
     </div>
     <div class="row mt-40 row-eq-height">
-      {% for list in page.hiw4.list%}
+      {% for list in page.hiw.list%}
       <div class="hiw-card col-md-4">
+        <i class="num">{{forloop.index}}</i>
         <i class="fa fa-4x fa-fw fa-{{list.icon}}"></i>
         <h5>{{list.heading}}</h5>
         <p>{{list.subheading}}</p>
@@ -86,6 +70,7 @@ layout: default
   </div>
 </section>
 
+<!-- Источники данных -->
 <section class="hiw">
   <div class="container text-center">
     <div class="row">
@@ -112,27 +97,31 @@ layout: default
       </div>
       {% endfor %}
     </div>
+    <div class="col-md-8 col-md-offset-2">
+      <!-- <p class="description">{{page.hiw3.text}}</p> -->
+      {% if page.hiw3.cta %}
+      <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#partnersForm">{{page.hiw3.cta}}</a>
+      {% endif %}
+    </div>
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
-        <p class="description">{{page.hiw3.text}}</p>
-        {% if page.hiw3.cta %}
-        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#partnersForm">{{page.hiw3.cta}}</a>
-        {% endif %}
+        <a href="#" class="btn btn-lg btn-primary mt-20" data-toggle="modal" data-target="#requestForm">{{page.cta2}}</a>
       </div>
     </div>
   </div>
 </section>
 
+<!-- Тарифы -->
 <section class="price">
   <div class="container">
     <div class="row text-center">
       <div class="col-md-8 col-md-offset-2">
-        <h1>{{page.plan.heading}}</h1>
-        <h3 class="subheading">{{page.plan.subheading}}</h3>
+        <h1>{{page.price.heading}}</h1>
+        <h3 class="subheading">{{page.price.subheading}}</h3>
       </div>
     </div>
     <div class="row mt-40 row-eq-height">
-      {% for list in page.plan.list%}
+      {% for list in page.price.list%}
       <div class="col-md-6">
         <div class="panel panel-info">
           <div class="panel-heading"><h3 class="text-center">{{list.heading}}</h3></div>
@@ -145,7 +134,7 @@ layout: default
             {% endfor %}
           </ul>
           <div class="panel-footer">
-            <a class="btn btn-lg btn-block btn-primary" href="#" data-toggle="modal" data-target="#modalPricing">Подробнее</a>
+            <a class="btn btn-lg btn-block btn-primary" href="#" data-toggle="modal" data-target="#modal{{list.src | capitalize}}">Подробнее</a>
           </div><!--/panel-footer-->
         </div><!--/panel-->
       </div><!--/col-->
@@ -154,6 +143,36 @@ layout: default
   </div><!--/container-->
 </section>
 
+<!-- Размещение баз данных партнеров -->
+<section id="razmesheniye" class="hiw">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>{{page.hiw4.heading}}</h1>
+        <h3 class="subheading">{{page.hiw4.subheading}}</h3>
+      </div>
+    </div>
+    <div class="row mt-40 row-eq-height">
+      {% for list in page.hiw4.list%}
+      <div class="hiw-card col-md-4">
+        <i class="fa fa-4x fa-fw fa-{{list.icon}}"></i>
+        <h5>{{list.heading}}</h5>
+        <p>{{list.subheading}}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <!-- <p class="description">{{page.hiw3.text}}</p> -->
+        {% if page.hiw4.cta %}
+        <a href="#" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#partnersForm">{{page.hiw4.cta}}</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Вам нужен удобный доступ к данным? -->
 <section class="cta dark-bg">
   <div class="container">
     <div class="row text-center">
@@ -166,8 +185,10 @@ layout: default
   </div>
 </section>
 
+<!-- Хотите узнать больше? -->
 {% include contact.html %}
 
+<!-- Футер\Подвал -->
 <footer class="dark-bg">
   <div class="container">
     <div class="row text-center">
@@ -184,6 +205,7 @@ layout: default
 {% include form-contact.html %}
 {% include modal-gov.html %}
 {% include modal-pricing.html %}
+{% include modal-pricing-single.html %}
 
 
 <!-- <section class="testimonial">
