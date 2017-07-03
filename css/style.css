@@ -298,6 +298,14 @@ footer {
 .hiw .disabled {
   color: #98abdb; }
 
+.sources {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #f3f5f9; }
+
+.price {
+  padding-top: 50px; }
+
 .contact-form h1, .contact-form h2, .contact-form h3, .contact-form h4, .contact-form h5, .contact-form h6 {
   margin-bottom: 40px; }
 

@@ -71,11 +71,11 @@ layout: default
 </section>
 
 <!-- Источники данных -->
-<section class="hiw">
+<section class="hiw sources">
   <div class="container text-center">
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
-        <h1>{{page.hiw3.heading}}</h1>
+        <h3>{{page.hiw3.heading}}</h3>
         <h3 class="subheading">{{page.hiw3.subheading}}</h3>
       </div>
     </div>
@@ -103,11 +103,6 @@ layout: default
       <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#partnersForm">{{page.hiw3.cta}}</a>
       {% endif %}
     </div>
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <a href="#" class="btn btn-lg btn-primary mt-20" data-toggle="modal" data-target="#requestForm">{{page.cta2}}</a>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -116,7 +111,7 @@ layout: default
   <div class="container">
     <div class="row text-center">
       <div class="col-md-8 col-md-offset-2">
-        <h1>{{page.price.heading}}</h1>
+        <h3>{{page.price.heading}}</h3>
         <h3 class="subheading">{{page.price.subheading}}</h3>
       </div>
     </div>
@@ -140,6 +135,11 @@ layout: default
       </div><!--/col-->
       {% endfor %}
     </div><!--/row-->
+    <div class="row mt-40">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <a href="#" class="btn btn-lg btn-primary mt-20" data-toggle="modal" data-target="#requestForm">{{page.cta2}}</a>
+      </div>
+    </div>
   </div><!--/container-->
 </section>
 
