@@ -1,5 +1,5 @@
 <!-- Start Modal -->
-<div class="modal fade" id="requestForm" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+<div class="modal fade" id="requestSituationForm" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -13,28 +13,9 @@
 
         <form action="https://formspree.io/request@apicrafter.ru" method="POST" data-parsley-validate="">
 
-          <div class="form-group">
-            <label for="formDB">Наименование базы данных*</label>
-            <select id="otherFieldOption" name="database" class="form-control" required>
-              <option disabled selected>Выберите Базу</option>
-              <option>Госзакупки и госконтракты</option>
-              <option value="otherField">Другое (пожелания)</option>
-            </select>
-          </div>
-          <div id="otherField" class="form-group database-name">
-            <!-- <label for="formMessage">Наименование базы данных*</label> -->
-            <textarea name="message" class="form-control" id="formMessage" rows="3" placeholder="Введите наименование базы данных"></textarea>
-          </div>
-
-          <div class="form-group">
-            <label for="formPlan">Тариф (при наличии определенности)</label>
-            <select name="plan" class="form-control">
-              <option disabled selected>Выберите тариф</option>
-              <option>Тариф 1</option>
-              <option>Тариф 2</option>
-              <option>Тариф 3</option>
-              <option>Выгрузка базы данных целиком</option>
-            </select>
+          <div class="form-group database-name">
+            <label for="formMessage">Описание ситуации*</label>
+            <textarea name="message" class="form-control" id="formMessage" rows="3" placeholder="Введите краткое описание вашей ситуации и задачи, требующей решения" required=""></textarea>
           </div>
 
           <div class="form-group row">

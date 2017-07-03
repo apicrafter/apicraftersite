@@ -40,7 +40,13 @@ layout: default
       {% for list in page.hiw2.list%}
       <div class="hiw-card col-md-4">
         <i class="fa fa-4x fa-fw fa-{{list.icon}}"></i>
+        {% if list.src %}
+        <h5><a href="#{{list.src}}" class="internal">{{list.heading}}</a></h5>
+        {% elsif list.modal %}
+        <h5><a href="#" class="internal" data-toggle="modal" data-target="#{{list.modal}}">{{list.heading}}</a></h5>
+        {% else %}
         <h5>{{list.heading}}</h5>
+        {% endif %}
         <p>{{list.subheading}}</p>
       </div>
       {% endfor %}
@@ -202,6 +208,7 @@ layout: default
 
 {% include form-partners.html %}
 {% include form-request.html %}
+{% include form-request-situation.html %}
 {% include form-contact.html %}
 {% include modal-gov.html %}
 {% include modal-pricing.html %}
