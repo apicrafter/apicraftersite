@@ -122,6 +122,11 @@ price:
         - Высокий лимит запросов
       src: pricing
 
+docs:
+  icon: file-text-o
+  heading: Документация
+  cta: Перейти к документации API
+
 cta_section: Вам нужен удобный доступ к данным?
 
 feedback:
