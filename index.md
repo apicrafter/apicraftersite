@@ -120,11 +120,11 @@ price:
         - Возможность настройки базы данных под требования заказчика
       src: pricingsingle
     - heading: Подписка
-      price: <strong>от 5 000 <small>руб./мес.</small></strong>
+      price: <strong>от 15 000 <small>руб./мес.</small></strong>
       features:
         - Доступ к отдельным базам данных через API
         - Ежемесячные платежи
-        - Высокий лимит запросов
+        - Тестовый доступ
       src: pricing
 
 docs:
